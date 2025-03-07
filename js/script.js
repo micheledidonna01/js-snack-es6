@@ -34,3 +34,42 @@ function bikeMoreLight(biciclette) {
 }
 
 
+let squadre = [
+    {
+        nome: 'inter',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'juventus',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'roma',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+    {
+        nome: 'napoli',
+        puntiFatti: 0,
+        falliSubiti: 0
+    },
+];
+let filterSquadre = [];
+
+for(let i = 0; i<squadre.length; i++){
+    numRandomPunti = Math.floor(Math.random()* 50);
+    squadre[i].puntiFatti = numRandomPunti;
+
+    numRandomFalli = Math.floor(Math.random()* 20);
+    squadre[i].falliSubiti = numRandomFalli;
+
+    filterSquadre.push(squadre[i].nome);
+    filterSquadre.push(squadre[i].falliSubiti);
+}
+
+
+
+console.log(squadre);
+console.log(filterSquadre);
