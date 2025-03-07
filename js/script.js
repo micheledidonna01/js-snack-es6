@@ -2,11 +2,11 @@
 let bici = [
     {
         nome: 'bici 1',
-        peso: 23
+        peso: 29
     },
     {
         nome: 'bici 2',
-        peso: 22
+        peso: 19
     },
     {
         nome: 'bici 3',
@@ -21,16 +21,25 @@ let bici = [
 bikeMoreLight(bici);
 
 
-function bikeMoreLight(biciclette) {
-    if ((bici[0].peso < bici[1].peso) && (bici[0].peso < bici[2].peso) && (bici[0].peso < bici[3].peso)) {
-        console.log(`La bibicletta che costa di meno è ${bici[0].nome} con ${bici[0].peso}kg`);
-    }else if((bici[1].peso < bici[0].peso) && (bici[1].peso < bici[2].peso) && (bici[1].peso < bici[3].peso)){
-        console.log(`La bibicletta che costa di meno è ${bici[1].nome} con ${bici[1].peso}kg`);
-    }else if((bici[2].peso < bici[0].peso) && (bici[2].peso < bici[1].peso) && (bici[2].peso < bici[3].peso)){
-        console.log(`La bibicletta che costa di meno è ${bici[2].nome} con ${bici[2].peso}kg`);
-    }else{
-        console.log(`La bibicletta che costa di meno è ${bici[3].nome} con ${bici[3].peso}kg`);
+function bikeMoreLight() {
+    Math.min(10, 20, 5, 30);
+    let result;
+    result = bici[0].peso
+    for(let i = 0; i<bici.length; i++){
+        if(bici[i].peso < result){
+            result = bici[i].peso;
+        }
     }
+    console.log(result);
+    // if ((bici[0].peso < bici[1].peso) && (bici[0].peso < bici[2].peso) && (bici[0].peso < bici[3].peso)) {
+    //     console.log(`La bibicletta che costa di meno è ${bici[0].nome} con ${bici[0].peso}kg`);
+    // }else if((bici[1].peso < bici[0].peso) && (bici[1].peso < bici[2].peso) && (bici[1].peso < bici[3].peso)){
+    //     console.log(`La bibicletta che costa di meno è ${bici[1].nome} con ${bici[1].peso}kg`);
+    // }else if((bici[2].peso < bici[0].peso) && (bici[2].peso < bici[1].peso) && (bici[2].peso < bici[3].peso)){
+    //     console.log(`La bibicletta che costa di meno è ${bici[2].nome} con ${bici[2].peso}kg`);
+    // }else{
+    //     console.log(`La bibicletta che costa di meno è ${bici[3].nome} con ${bici[3].peso}kg`);
+    // }
 }
 
 
@@ -68,7 +77,6 @@ for(let i = 0; i<squadre.length; i++){
     filterSquadre.push(squadre[i].nome);
     filterSquadre.push(squadre[i].falliSubiti);
 }
-
 
 
 console.log(squadre);
