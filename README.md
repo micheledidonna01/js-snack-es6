@@ -7,15 +7,12 @@ Stampare a schermo la bici con peso minore.
 
 - creo un array di oggetti contenenti nome della bicicletta e il suo peso
 - invoco la funzione bici più leggera
+- creo una variabile risultato primo peso della bici come valore
 - inizializzo la funzione
-- se la prima bici ha un peso minore a quello della bici 2 , la 3 e la 4
-    - stampo un messaggio dove la prima bici è la più leggera
-- altrimenti se la seconda bici ha un peso minore a quello della bici 1 , la 3 e la 4
-    - stampo un messaggio dove la seconda bici è la più leggera
-- altrimenti se la terza bici ha un peso minore a quello della bici 1 , la 2 e la 4
-    - stampo un messaggio dove la prima bici è la più leggera
-- altrimenti
-    - stampo un messaggio dove la quarta bici è la più leggera
+- ciclo for con lunghezza dell'array
+    - se il valore del peso attuale è minore della variabile risultato
+        - la variabile risultato è uguale al valore attuale
+- stampo la varaibile risultato
 
 ---
 ---
@@ -35,11 +32,13 @@ Infine, creiamo un nuovo array i cui elementi contengono solo nomi e falli subit
     - lo inserisco nei punti fatti 
     - genero un valore random da 0 a 20
     - lo inserisco nei falli subiti
+- creo un nuovo array
+- creo 2 oggetti
+- pusho gli oggetti nel nuovo array
+- ciclo for per ogni oggetto presente nel nuovo array
+    - inserisco la chiave nome con valore 
+    - inserisco la chiave falli subiti con valore 
+- stampo nuovo array
 
-    - pusho nell'array vuoto nome della squadra 
-    - pusho nell'array vuoto falli subiti
-
-- stampo array di oggetti con nome punti e falli
-- stampo l'array che era vuoto con nome e falli 
     
 
