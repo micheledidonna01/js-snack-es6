@@ -72,6 +72,7 @@ let squadre = [
         falliSubiti: 0
     },
 ];
+console.log(squadre.length);
 
 squadreFilter();
 function squadreFilter() {
@@ -84,15 +85,18 @@ function squadreFilter() {
     }
 
     let array = [];
-    let obj1 = {};
-    let obj2 = {};
-    array.push(obj1);
-    array.push(obj2);
+    // let obj1 = {};
+    // let obj2 = {};
+    // array.push(obj1);
+    // array.push(obj2);
     let resultSnack2 = document.getElementById('snack2');
-    for (let i = 0; i < array.length; i++) {
+    for (let i = 0; i < squadre.length; i++) {
+        let obj = {};
+        array.push(obj);
         array[i].nome = squadre[i].nome;
         array[i].falliSubiti = squadre[i].falliSubiti;
-        resultSnack2.textContent += `${JSON.stringify(array[i])}`;
+        resultSnack2.innerHTML += `${JSON.stringify(array[i])} <br>`;
+
     }
     console.log(array);
     console.log(`il nuovo array è: ${JSON.stringify(array)}`);
